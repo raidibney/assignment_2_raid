@@ -1,118 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechWave</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-[rgba(26,11,46,1)]">
 
-    <header class="w-full bg-[rgba(26,11,46,1)] py-4">
-        <!-- nav start from here -->
-        <nav class="md:justify-center md:items-center md:space-x-36 flex justify-center items-center space-x-36 px-4">
-        
-            <!-- Logo -->
-            <div class="flex-shrink-0 ">
-               <h1 class="text-white font-bold text-3xl">Tech<span class="bg-gradient-to-r from-[rgba(247,233,63,1)] via-[rgba(251,9,180,1)] to-[rgba(145,0,248,1)] bg-clip-text text-transparent font-bold text-3xl">Wave</span></h1>
-            </div>
-            
-            <!-- Navigation Links -->
-            <div class="flex space-x-8">
-                <ul class="flex space-x-8">
-                    <li><a href="#" class="text-white text-md hover:text-orange-500">About</a></li>
-                    <li><a href="#" class="text-white text-md hover:text-orange-500">Episodes</a></li>
-                    <li><a href="#" class="text-white text-md hover:text-orange-500">Host</a></li>
-                
-                </ul>
-            </div>
+<body class="bg-[rgba(26,11,46,1)] text-white">
 
-            <!-- Top Button -->
-            <div class="ml-10">
-                <button class="bg-gradient-to-r from-[rgba(247,233,63,1)] via-[rgba(251,9,180,1)]
-                      to-[rgba(145,0,248,1)] text-white px-8 py-2 rounded-3xl">Subscribe</button>
-            </div>
-        </nav>
-
-        <!--banner start here -->
-        
-       <section class=" relative flex ">
-        
-        <!--banner image -->
-        
-        <div class="justify-center w-full h-[550px] ml-auto mr-auto mt-8 ">
-            <img src="./assets/hero-bg.png" alt="banner image">
+  <!-- ===================== HEADER (Nav + Hero) ===================== -->
+  <header class="w-full bg-[rgba(26,11,46,1)]">
+    <!-- NAV -->
+    <nav class="max-w-6xl mx-auto px-4 py-4">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <h1 class="font-bold text-3xl">
+            Tech
+            <span class="bg-gradient-to-r from-[rgba(247,233,63,1)] via-[rgba(251,9,180,1)] to-[rgba(145,0,248,1)] bg-clip-text text-transparent">
+              Wave
+            </span>
+          </h1>
         </div>
-        
-        <!--banner content -->
-       <!--circle image-->
-        <div class="absolute top-1/2 left-[660px] transform -translate-x-1/2 -translate-y-1/2 text-center text-white w-[400px] h-[400px]">
 
-            <img src="./assets/hero-circle.png" >
-                        
+        <!-- Links -->
+        <ul class="flex items-center gap-6">
+          <li><a href="#" class="text-md hover:text-orange-500">About</a></li>
+          <li><a href="#" class="text-md hover:text-orange-500">Episodes</a></li>
+          <li><a href="#" class="text-md hover:text-orange-500">Host</a></li>
+        </ul>
+
+        <!-- Button -->
+        <div>
+          <button class="bg-gradient-to-r from-[rgba(247,233,63,1)] via-[rgba(251,9,180,1)] to-[rgba(145,0,248,1)] text-white px-8 py-2 rounded-3xl">
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="relative mt-4 w-full h-[650px] overflow-hidden">
+      <!-- Background -->
+      <img src="./assets/hero-bg.png" alt="banner image" class="w-full h-full object-cover" />
+
+      <!-- Overlay -->
+      <div class="absolute inset-0 flex items-center justify-center px-4">
+        <div class="w-full max-w-5xl flex flex-col items-center text-center">
+
+          <!-- Circle + Mic -->
+          <div class="relative w-[240px] sm:w-[280px] md:w-[360px] lg:w-[400px] aspect-square">
+            <img src="./assets/hero-circle.png" class="absolute inset-0 w-full h-full" alt="" />
+
+            <img
+              src="./assets/microphone.png"
+              class="absolute left-1/2 top-1/2 w-[90px] sm:w-[110px] md:w-[140px] lg:w-[160px]
+                     -translate-x-1/2 -translate-y-1/2"
+              alt=""
+            />
+          </div>
+
+          <!-- Text -->
+          <div class="mt-6">
+            <h1 class="font-bold text-3xl sm:text-4xl md:text-5xl">TechWave</h1>
+            <p class="mt-2 text-xs sm:text-sm md:text-base max-w-xl mx-auto">
+              Your daily dose of tech insights, productivity hacks and personal growth
+            </p>
+          </div>
+
+          <!-- Buttons -->
+          <div class="mt-6 flex flex-col sm:flex-row gap-4">
+            <!--button 1-->
+            <button
+             class="inline-flex items-center justify-center gap-2.5
+         bg-gradient-to-r from-[rgba(247,233,63,1)] via-[rgba(251,9,180,1)] to-[rgba(145,0,248,1)]
+         text-white px-10 py-3 rounded-full leading-none"
+            >
+              <span><img  src="./assets/spotify.png" alt="" /></span>
+              Listen On Spotify
+            </button>
+            <!--button 2-->
+            <button
+              class="flex items-center justify-center gap-2.5 bg-transparent
+                     border border-green-500 text-white px-8 py-2 rounded-3xl"
+            >
+              <span><img  src="./assets/message.png" alt="" /></span>
+              Subscribe
+            </button>
+          </div>
 
         </div>
-       <!--microphone image-->
-    <div class="absolute top-[370px] left-[778px] transform -translate-x-1/2 -translate-y-1/2 text-center text-white w-[400px] h-[400px]">
-        <img src="./assets/microphone.png" >
+      </div>
+    </section>
+  </header>
+
+  <!-- ===================== ABOUT ===================== -->
+  <main>
+    <section class="max-w-3xl mx-auto px-4 py-16 text-center mt-10">
+      <h1 class="font-bold text-3xl">About the Podcast</h1>
+      <p class="mt-4 text-sm sm:text-base leading-relaxed text-white/90">
+        TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
+        We break down complex topics into digestible insights, explore productivity strategies that actually work,
+        and share stories of personal growth from industry leaders.
+        <br /><br />
+        Join thousands of young professionals and tech enthusiasts who start their day with TechWave.
+      </p>
+    </section>
+
+    <!-- ===================== STATS / RATING ===================== -->
+    <section class="max-w-6xl mx-auto px-4 pb-16">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <h1 class="text-green-400 font-bold text-3xl">150K+</h1>
+          <p class="mt-1 text-white/80">Monthly Listeners</p>
+        </div>
+
+        <div>
+          <h1 class="text-green-400 font-bold text-3xl">200+</h1>
+          <p class="mt-1 text-white/80">Episodes Published</p>
+        </div>
+
+        <div>
+          <h1 class="text-green-400 font-bold text-3xl">4.9</h1>
+          <p class="mt-1 text-white/80">Average Rating</p>
+        </div>
+
+        <div>
+          <h1 class="text-green-400 font-bold text-3xl">50+</h1>
+          <p class="mt-1 text-white/80">Industry Experts</p>
+        </div>
+      </div>
+    </section>
+
+
+
+   <!--=============================stylish grid start from here=========================================-->
+<section class="w-full bg-[rgba(35,14,61,1)] text-white mt-10 py-[120px] px-6 md:px-12 lg:px-[200px]">
+  <div class="mx-auto max-w-[1200px]">
+    <h1 class="font-bold text-3xl text-center mb-12">Why Choose TechWave</h1>
+
+    <!-- OUTER GRID -->
+    <div class="grid grid-cols-1 lg:grid-cols-[380px_1fr] gap-6">
+      
+      <!-- div one -->
+      <div class="bg-[rgba(53,17,101,0.4)] rounded-2xl p-8 text-left border border-white/5 shadow-lg
+                  lg:row-span-2 lg:h-[480px] pt-28">
+                  <img src="./assets/headphone.png" alt="headphn">
+                  <h1 class="font-bold text-3xl ">Premium Audio Quality</h1>
+        <p class="text-sm">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+      </div>
+
+      <!-- div two-->
+      <div class="bg-[rgba(53,17,101,0.4)] rounded-2xl p-8 text-left border border-white/5 shadow-lg
+                  lg:h-[225px]">
+                  <img src="./assets/device.png" alt="device">
+        <h1 class="font-bold text-3xl " >Mobile Friendly</h1>
+        <p class="text-sm">Listen on the go with seamless mobile experience and offline downloads.</p>
+      </div>
+
+      <!-- div three  -->
+      <div class="bg-[rgba(53,17,101,0.4)] rounded-2xl p-8 text-left border border-white/5 shadow-lg
+                  lg:h-[225px]">
+                  <img src="./assets/location.png" alt="location">
+        <h1 class="font-bold text-3xl ">Global Community</h1>
+        <p class="text-sm">Connect with tech enthusiasts from over 120 countries worldwide.</p>
+      </div>
+
+      <!-- BOTTOM ROW (spans full width, then split 2fr/1fr like the image) -->
+      <div class="lg:col-span-2 grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-6">
+        
+        <!-- div four -->
+        <div class="bg-[rgba(53,17,101,0.4)] rounded-2xl p-8 text-left border border-white/5 shadow-lg
+                    lg:h-[273px]">
+          <img src="" alt="">
+          <h1 class="font-bold text-3xl ">Exclusive Interviews</h1>
+          <p class="text-sm">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
+        </div>
+
+        <!-- div five -->
+        <div class="bg-[rgba(53,17,101,0.4)] rounded-2xl p-8 text-left border border-white/5 shadow-lg
+                    lg:h-[273px]">
+
+          <img src="./assets/resource.png" alt="resource">
+          <h1 class="font-bold text-3xl ">Rich Resources</h1>
+          <p class="text-sm">Access show notes, transcripts, and additional learning materials for every episode.</p>
+        </div>
+
+      </div>
     </div>
-     <!--the writting part at the hero section -->
-    <div class="absolute top-[670px] left-[630px] transform -translate-x-1/2 -translate-y-1/2 text-center text-white w-[500px] h-[400px]">
-        <h1 class="font-bold text-4xl">TechWave</h1>
-        <p class="text-sm ">Your daily dose of tech insights,productivity hacks and personal growth</p>
-    </div>
-        <!--hero  button -->
-        <!--button1-->
-        <div class="absolute top-[550px] left-[540px] transform -translate-x-1/2 -translate-y-1/2  mt-8">
-            <button class="flex gap-2.5 bg-gradient-to-r from-[rgba(247,233,63,1)] via-[rgba(251,9,180,1)]
-                      to-[rgba(145,0,248,1)] text-white px-8 py-2 rounded-4xl"><span><img src="./assets/spotify.png"></span>Listen On Spotify</button>
-        </div>
-        <!--button2-->
-        <div class="absolute border rounded-3xl border-green-500 top-[550px] left-[750px] transform -translate-x-1/2 -translate-y-1/2  mt-8">
-                <button class="flex gap-2.5 bg-transparent border-l-green-600 text-white px-8 py-2 rounded-4xl"><span><img src="./assets/message.png"></span>Subscribe</button>
-            </div>
-
-        </section>
-        
-      <!--about section start here -->
-
-      <section>
-        <div class="absolute top-[970px] left-[630px] transform -translate-x-1/2 -translate-y-1/2 text-center text-white w-[500px] h-[400px]">
-            <h1 class="text-white font-bold text-3xl">About the Podcast</h1>
-            <p>TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
-             We break down complex topics into digestible insights, explore productivity strategies that actually work,
-              and share stories of personal growth from industry leaders.
-
-             Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
-        </div>
-      </section>
-      <!--rating section start here -->
-       <section class="flex gap-20 absolute top-[1250px] left-[630px] transform -translate-x-1/2 -translate-y-1/2 text-center text-white w-[900px] h-[400px]">
-        <!--one -->
-        <div class="w-[346px] h-[44px]">
-           <h1 class="text-green-400 font-bold text-3xl">150K+</h1>
-           <P>Monthly Listeners</P>
-        </div>
-        <!--two-->
-        <div class="w-[346px] h-[44px]">
-             <h1 class="text-green-400 font-bold text-3xl">200+</h1>
-           <P>Episodes Published</P>
-
-        </div>
-        <!--three-->
-        <div class="w-[346px] h-[44px]">
-            <h1 class="text-green-400 font-bold text-3xl" >4.9</h1>
-           <P>Avarage Rating</P>
-        </div>
-        <!--four-->
-         <div class="w-[346px] h-[44px]">
-            <h1 class="text-green-400 font-bold text-3xl">50+</h1>
-           <P>Industry Experts</P>
-        </div>
-
-       </section>
-    </header>
-
+  </div>
+</section>
+  </main>
 
 </body>
 </html>
