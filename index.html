@@ -11,34 +11,41 @@
 
   <!-- ===================== HEADER (Nav + Hero) ===================== -->
   <header class="w-full bg-[rgba(26,11,46,1)]">
-    <!-- NAV -->
-    <nav class="max-w-6xl mx-auto px-4 py-4">
-      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-        <!-- Logo -->
-        <div class="flex-shrink-0">
-          <h1 class="font-bold text-3xl">
-            Tech
-            <span class="bg-gradient-to-r from-[rgba(247,233,63,1)] via-[rgba(251,9,180,1)] to-[rgba(145,0,248,1)] bg-clip-text text-transparent">
-              Wave
-            </span>
-          </h1>
-        </div>
+   <nav class="max-w-6xl mx-auto px-4 py-4">
+  <div class="grid grid-cols-2 md:grid-cols-3 items-center">
+    <!-- Left: Logo -->
+    <div class="justify-self-start">
+      <h1 class="font-bold text-3xl">
+        Tech
+        <span
+          class="bg-gradient-to-r from-[rgba(247,233,63,1)] via-[rgba(251,9,180,1)] to-[rgba(145,0,248,1)] bg-clip-text text-transparent"
+        >
+          Wave
+        </span>
+      </h1>
+    </div>
 
-        <!-- Links -->
-        <ul class="flex items-center gap-6">
-          <li><a href="#" class="text-md hover:text-orange-500">About</a></li>
-          <li><a href="#" class="text-md hover:text-orange-500">Episodes</a></li>
-          <li><a href="#" class="text-md hover:text-orange-500">Host</a></li>
-        </ul>
+    <!-- Mobile: Hamburger icon (right) -->
+    <div class="justify-self-end md:hidden">
+      <img src="./assets/hamburger-menu.png">
+        
+    </div>
 
-        <!-- Button -->
-        <div>
-          <button class="bg-gradient-to-r from-[rgba(247,233,63,1)] via-[rgba(251,9,180,1)] to-[rgba(145,0,248,1)] text-white px-8 py-2 rounded-3xl">
-            Subscribe
-          </button>
-        </div>
-      </div>
-    </nav>
+    <!-- Desktop: Links (center) -->
+    <ul class="hidden md:flex justify-self-center items-center gap-20">
+      <li><a href="#" class="text-md hover:text-orange-500">About</a></li>
+      <li><a href="#" class="text-md hover:text-orange-500">Episodes</a></li>
+      <li><a href="#" class="text-md hover:text-orange-500">Host</a></li>
+    </ul>
+
+    <!-- Desktop: Button (right) -->
+    <div class="hidden md:block justify-self-end">
+      <button class="bg-gradient-to-r from-[rgba(247,233,63,1)] via-[rgba(251,9,180,1)] to-[rgba(145,0,248,1)] text-white px-8 py-2 rounded-3xl">
+        Subscribe
+      </button>
+    </div>
+  </div>
+</nav>
 
     <!-- HERO -->
     <section class="relative mt-4 w-full h-[650px] overflow-hidden">
@@ -174,7 +181,7 @@
         <!-- div four -->
         <div class="bg-[rgba(53,17,101,0.4)] rounded-2xl p-8 text-left border border-white/5 shadow-lg
                     lg:h-[273px]">
-          <img src="" alt="">
+          <img src="./assets/device.png" alt="">
           <h1 class="font-bold text-3xl ">Exclusive Interviews</h1>
           <p class="text-sm">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
         </div>
@@ -280,9 +287,62 @@
     </div>
   </div>
 </section>
-
-
   </main>
+
+  <!--footer start from here -->
+
+  <footer class="relative overflow-hidden">
+  <!-- Background image -->
+  <div class="absolute inset-0">
+    <img
+      src="./assets/footer-bg.png"
+      alt=""
+      class="h-full w-full "
+    />
+    
+  </div>
+
+  <!-- Content -->
+  <section
+    class="relative z-10 mx-auto flex max-w-6xl flex-col items-center justify-center px-4 py-24 text-center"
+  >
+    <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight">
+      <span class="text-white">Tech</span><span class="bg-gradient-to-r from-[rgba(247,233,63,1)] via-[rgba(251,9,180,1)] to-[rgba(145,0,248,1)] bg-clip-text text-transparent"> Wave </span>
+    </h1>
+
+    <div
+      class="mt-10 flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-sm text-white/70"
+    >
+      <a href="#" class="flex items-center gap-2 hover:text-white transition">
+        <img src="./assets/spotify.png" class="h-5 w-5" alt="Spotify" />
+        <span>Spotify</span>
+      </a>
+
+      <a href="#" class="flex items-center gap-2 hover:text-white transition">
+        <img
+          src="./assets/apple-podcast.png"
+          class="h-5 w-5"
+          alt="Apple Podcasts"
+        />
+        <span>Apple Podcasts</span>
+      </a>
+
+      <a href="#" class="flex items-center gap-2 hover:text-white transition">
+        <img src="./assets/youtube-podcast.png" class="h-5 w-5" alt="YouTube" />
+        <span>YouTube</span>
+      </a>
+
+      <a href="#" class="flex items-center gap-2 hover:text-white transition">
+        <img src="./assets/twitter.png" class="h-5 w-5" alt="Twitter" />
+        <span>Twitter</span>
+      </a>
+    </div>
+
+    <p class="mt-10 text-sm text-white/50">
+      © 2026 TechWave Podcast. All rights reserved.
+    </p>
+  </section>
+</footer>
 
 </body>
 </html>
