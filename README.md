@@ -1,3 +1,5 @@
+live link : https://raidibney.github.io/assignment_2_raid/
+
 ## 🌟 WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-002 😎
 
 ---
