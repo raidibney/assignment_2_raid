@@ -7,7 +7,8 @@
 
   <title>TechWave</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  
+  <!--font asm link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="bg-[rgba(26,11,46,1)] text-white">
@@ -44,7 +45,7 @@
 
     <!-- top subscribe button -->
     <div class="hidden md:block justify-self-end animate-pulse">
-      <button class="bg-gradient-to-r from-[rgba(247,233,63,1)] via-[rgba(251,9,180,1)] to-[rgba(145,0,248,1)] text-white px-8 py-2 rounded-3xl">
+      <button class="bg-gradient-to-r from-[rgba(247,233,63,1)] via-[rgba(251,9,180,1)] to-[rgba(145,0,248,1)] text-white px-8 py-2 rounded-3xl hover:text-black">
         Subscribe
       </button>
     </div>
@@ -99,7 +100,7 @@
             <button
              class="inline-flex items-center justify-center gap-2.5
          bg-gradient-to-r from-[rgba(247,233,63,1)] via-[rgba(251,9,180,1)] to-[rgba(145,0,248,1)]
-         text-white px-10 py-3 rounded-full leading-none"
+         text-white px-10 py-3 rounded-full leading-none hover:text-black"
             >
               <span><img  src="./assets/spotify.png" alt="" /></span>
               Listen On Spotify
@@ -107,7 +108,7 @@
             <!--button 2-->
             <button
               class="flex items-center justify-center gap-2.5 bg-transparent
-                     border border-green-500 text-white px-8 py-2 rounded-3xl animate-pulse"
+                     border border-green-500 text-white px-8 py-2 rounded-3xl animate-pulse hover:text-red-600"
             >
               <span><img  src="./assets/message.png" alt="" /></span>
               Subscribe
@@ -146,7 +147,7 @@
         </div>
 
         <div>
-          <h1 class="text-green-400 font-bold text-3xl">4.9</h1>
+          <h1 class="text-green-400 font-bold text-3xl">4.9<i class="fa-solid fa-star text-xl"></i></h1>
           <p class="mt-1 text-white/80">Average Rating</p>
         </div>
 
